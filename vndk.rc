@@ -1,3 +1,6 @@
+on post-fs-data
+    exec - root -- /system/bin/basic-integrity.sh
+
 on post-fs
 	exec - root -- /system/bin/vndk-detect
 	exec - root -- /system/bin/rw-system.sh
