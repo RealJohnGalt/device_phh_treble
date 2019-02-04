@@ -8,6 +8,6 @@ $(call inherit-product, device/phh/treble/descendant.mk)
 PRODUCT_NAME := treble_a64_boS
 PRODUCT_DEVICE := phhgsi_a64_ab
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := Phh-Treble Go
+PRODUCT_MODEL := Descendant Generic Device Go
 
 PRODUCT_PACKAGES +=  phh-su me.phh.superuser
