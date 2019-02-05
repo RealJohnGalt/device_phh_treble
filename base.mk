@@ -114,3 +114,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
 	device/phh/treble/files/adbd.rc:system/etc/init/adbd.rc
+
+# Offline charging for Huawei
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,device/phh/treble/huawei_charger,system/etc/charger)
