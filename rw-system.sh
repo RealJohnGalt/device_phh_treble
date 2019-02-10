@@ -204,6 +204,10 @@ done
 mount -o bind /system/phh/empty /vendor/overlay/SysuiDarkTheme/SysuiDarkTheme.apk || true
 mount -o bind /system/phh/empty /vendor/overlay/SysuiDarkTheme/SysuiDarkThemeOverlay.apk || true
 
+if getprop ro.vendor.build.fingerprint | grep -qE Xiaomi/sirius/sirius:9/*
+    mount -o bind /system/phh/empty /vendor/overlay/bluetoothrescommon.apk || true
+fi
+
 if grep -qF 'PowerVR Rogue GE8100' /vendor/lib/egl/GLESv1_CM_mtk.so || \
 	grep -qF 'PowerVR Rogue' /vendor/lib/egl/libGLESv1_CM_mtk.so || \
 	(getprop ro.product.board | grep -qE -e msm8917 -e msm8937 -e msm8940);then
