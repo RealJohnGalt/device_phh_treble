@@ -262,6 +262,11 @@ if getprop ro.vendor.build.fingerprint |grep -iq -E -e 'huawei|honor' || getprop
     fi
 fi
 
+if getprop ro.vendor.build.fingerprint |grep -iq -E -e 'huawei|honor';then
+    setprop persist.sys.bt.unsupport.states 000000000000000000000011111
+    setprop persist.sys.bt.unsupport.features 00000001
+fi
+
 if getprop ro.vendor.build.fingerprint | grep -qE -e ".*(crown|star)[q2]*lte.*"  -e ".*(SC-0[23]K|SCV3[89]).*";then
 	for f in /vendor/lib/libfloatingfeature.so /vendor/lib64/libfloatingfeature.so;do
 		[ ! -f $f ] && continue
