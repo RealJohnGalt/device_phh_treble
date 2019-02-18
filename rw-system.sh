@@ -236,11 +236,11 @@ if getprop ro.product.model |grep -qF ANE;then
 	setprop debug.sf.latch_unsignaled 1
 fi
 
-if ! grep vendor.huawei.hardware.nfc /vendor/manifest.xml || getprop ro.vendor.build.fingerprint | ! grep -iq -e BLN;then
+if ! grep vendor.huawei.hardware.nfc /vendor/manifest.xml || getprop ro.vendor.build.fingerprint | ! grep -iq -E -e 'RNE|BLN' ;then
     mount -o bind system/phh/empty /system/etc/permissions/android.hardware.nfc.hce.xml
     mount -o bind system/phh/empty /system/etc/permissions/android.hardware.nfc.xml
     mount -o bind system/phh/empty /system/etc/permissions/com.android.nfc_extras.xml
-    if getprop ro.vendor.build.fingerprint | ! grep -iq -E -e 'PRA|BLN';then
+    if getprop ro.vendor.build.fingerprint | ! grep -iq -E -e 'PRA|BLN|RNE';then
         mount -o bind system/phh/empty /system/etc/libnfc-brcm.conf
         mount -o bind system/phh/empty /system/etc/libnfc-nxp.conf
     fi
