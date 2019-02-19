@@ -6,9 +6,15 @@ on post-fs
 	exec - root -- /system/bin/rw-system.sh
 	mount none /system/etc/usb_audio_policy_configuration.xml /vendor/etc/usb_audio_policy_configuration.xml bind
 	export LD_CONFIG_FILE /system/etc/ld.config.${persist.sys.vndk}.txt
+    start huawei_hwc
 
 service phh_on_boot /system/bin/phh-on-boot.sh
     oneshot
+    disabled
+
+service huawei_hwc /system/bin/huawei_hwc.sh
+    oneshot
+    seclabel u:r:su:s0
     disabled
 
 on property:sys.boot_completed=1
