@@ -19,5 +19,5 @@ getprop | \
     done
 
 if grep -qF android.hardware.boot /vendor/manifest.xml;then
-	bootctl mark-boot-successful
+    bootctl mark-boot-successful
 fi
