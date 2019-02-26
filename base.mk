@@ -144,3 +144,7 @@ PRODUCT_COPY_FILES += \
 # Offline charging for Huawei
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/phh/treble/huawei_charger,system/etc/charger)
+
+#MTK incoming SMS fix
+PRODUCT_PACKAGES += \
+	mtk-sms-fwk-ready
