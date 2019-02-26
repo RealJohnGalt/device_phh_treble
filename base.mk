@@ -85,6 +85,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/phh/treble/empty:system/phh/empty \
     device/phh/treble/huawei_hwc/huawei_hwc.sh:system/bin/huawei_hwc.sh \
+    device/phh/treble/magisk_adb.sh:system/bin/magisk_adb.sh \
     device/phh/treble/phh-on-boot.sh:system/bin/phh-on-boot.sh
 
 PRODUCT_PACKAGES += \
