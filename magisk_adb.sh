@@ -1,4 +1,4 @@
 #!/system/bin/sh
-if [ -f /sbin/.core ];then
+if [ -d /sbin/.core ];then
     adbd
 fi
