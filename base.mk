@@ -74,8 +74,8 @@ PRODUCT_COPY_FILES += \
     device/phh/treble/huawei_hwc/vendor.huawei.hardware.perfgenius@2.0.so:system/huawei_hwc/vendor.huawei.hardware.perfgenius@2.0.so
 
 # LineageOS build may need this to make NFC work
-PRODUCT_PACKAGES += \
-        NfcNci  
+#PRODUCT_PACKAGES += \
+#        NfcNci  
 
 PRODUCT_COPY_FILES += \
     device/phh/treble/rw-system.sh:system/bin/rw-system.sh \
