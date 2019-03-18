@@ -3,7 +3,7 @@ include build/make/target/product/treble_common.mk
 $(call inherit-product, vendor/vndk/vndk-binder32.mk)
 $(call inherit-product, device/phh/treble/base.mk)
 $(call inherit-product, device/phh/treble/gapps.mk)
-
+$(call inherit-product, vendor/motorola/ali/ali-vendor.mk)
 $(call inherit-product, device/phh/treble/descendant.mk)
 
 PRODUCT_NAME := ali_n
@@ -20,6 +20,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
         PRIVATE_BUILD_DESC="ali_n-user 9 PPS29.55-24 a37fd release-keys"
 
 BUILD_FINGERPRINT := motorola/ali_n/ali_n:9/PPS29.55-24/a37fd:user/release-keys
-
-PRODUCT_PACKAGES += \
-    SprintDM 
