@@ -14,10 +14,6 @@ GAPPS_FORCE_WEBVIEW_OVERRIDES := true
 PRODUCT_PACKAGES += \
        Chrome \
        CalculatorGoogle \
-       Velvet \
-       Tycho \
-       CarrierConfig \
-       CarrierServices \
        PrebuiltDeskClockGoogle \
        CalendarGooglePrebuilt \
        LatinImeGoogle \
