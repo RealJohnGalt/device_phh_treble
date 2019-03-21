@@ -5,12 +5,14 @@ $(call inherit-product, device/phh/treble/base.mk)
 $(call inherit-product, device/phh/treble/gapps.mk)
 $(call inherit-product, vendor/motorola/ali/ali-vendor.mk)
 $(call inherit-product, device/phh/treble/descendant.mk)
+$(call inherit-product, device/qcom/sepolicy/sepolicy.mk)
 
 PRODUCT_NAME := ali_n
 PRODUCT_DEVICE := ali_n
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_MODEL := moto g(6)
+TARGET_BOARD_PLATFORM := msm8953
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
         ro.bootimage.build.fingerprint="motorola/ali_n/ali_n:9/PPS29.55-24/a37fd:user/release-keys" \
@@ -20,3 +22,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
         PRIVATE_BUILD_DESC="ali_n-user 9 PPS29.55-24 a37fd release-keys"
 
 BUILD_FINGERPRINT := motorola/ali_n/ali_n:9/PPS29.55-24/a37fd:user/release-keys
+
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
