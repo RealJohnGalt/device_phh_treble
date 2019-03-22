@@ -25,7 +25,8 @@ BUILD_FINGERPRINT := motorola/ali_n/ali_n:9/PPS29.55-24/a37fd:user/release-keys
 
 PRODUCT_PACKAGES += \
     ims-ext-common \
-    telephony-ext
+    telephony-ext \
+    Stk
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
