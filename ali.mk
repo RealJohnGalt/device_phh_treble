@@ -7,21 +7,21 @@ $(call inherit-product, vendor/motorola/ali/ali-vendor.mk)
 $(call inherit-product, device/phh/treble/descendant.mk)
 $(call inherit-product, device/qcom/sepolicy/sepolicy.mk)
 
-PRODUCT_NAME := ali_n
-PRODUCT_DEVICE := ali_n
+PRODUCT_NAME := ali
+PRODUCT_DEVICE := ali
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_MODEL := moto g(6)
 TARGET_BOARD_PLATFORM := msm8953
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        ro.bootimage.build.fingerprint="motorola/ali_n/ali_n:9/PPS29.55-24/a37fd:user/release-keys" \
+	ro.bootimage.build.fingerprint="motorola/ali/ali:9/PPS29.55-24/a37fd:user/release-keys" \
 	ro.build.thumbprint="9/PPS29.55-24/a37fd:user/release-keys" \
-        ro.vendor.build.fingerprint="motorola/ali/ali:8.0.0/OPSS27.104-92-2/3:user/release-keys" \
+        ro.vendor.build.fingerprint="motorola/ali/ali:9/PPS29.55-24/a37fd:user/release-keys" \
 	ro.vendor.build.thumbprint="9/PPS29.55-24/a37fd:user/release-keys" \
-        PRIVATE_BUILD_DESC="ali_n-user 9 PPS29.55-24 a37fd release-keys"
+        PRIVATE_BUILD_DESC="ali-user 9 PPS29.55-24 a37fd release-keys"
 
-BUILD_FINGERPRINT := motorola/ali_n/ali_n:9/PPS29.55-24/a37fd:user/release-keys
+BUILD_FINGERPRINT := motorola/ali/ali:9/PPS29.55-24/a37fd:user/release-keys
 
 PRODUCT_PACKAGES += \
     ims-ext-common \

@@ -1,1 +1,1 @@
-add_lunch_combo ali_n-userdebug
+add_lunch_combo ali-userdebug

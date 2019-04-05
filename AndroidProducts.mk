@@ -9,7 +9,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/treble_arm64_agN.mk \
     $(LOCAL_DIR)/treble_arm_agS.mk \
     $(LOCAL_DIR)/treble_arm_agN.mk \
-    $(LOCAL_DIR)/ali_n.mk \
+    $(LOCAL_DIR)/ali.mk \
     $(LOCAL_DIR)/treble_a64_agS.mk \
     $(LOCAL_DIR)/treble_a64_agN.mk \
     $(LOCAL_DIR)/treble_arm64_afS.mk \
