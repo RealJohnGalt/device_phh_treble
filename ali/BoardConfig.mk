@@ -1,15 +1,6 @@
-
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 943718400 # 900MB
-TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv8-a
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_VARIANT := cortex-a53
-
+include build/make/target/board/generic_arm_a/BoardConfig.mk
 include device/phh/treble/board-base.mk
 
 ifeq ($(BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE),)
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1572864000
 endif
-
-TARGET_BOARD_PLATFORM := msm8953
