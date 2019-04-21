@@ -12,6 +12,7 @@ PRODUCT_DEVICE := ali
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_MODEL := moto g(6)
+TARGET_BOARD_PLATFORM := msm8953
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	ro.bootimage.build.fingerprint="motorola/ali/ali:9/PPS29.55-24/a37fd:user/release-keys" \
