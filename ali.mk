@@ -5,6 +5,7 @@ $(call inherit-product, device/phh/treble/base.mk)
 $(call inherit-product, vendor/motorola/ali/ali-vendor.mk)
 $(call inherit-product, device/phh/treble/descendant.mk)
 $(call inherit-product, device/qcom/sepolicy/sepolicy.mk)
+$(call inherit-product, device/lineage/sepolicy/common/sepolicy.mk)
 
 PRODUCT_NAME := ali
 PRODUCT_DEVICE := ali
