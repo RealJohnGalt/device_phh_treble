@@ -20,7 +20,6 @@ PRODUCT_PACKAGES += \
        Tycho \
        CarrierServices \
        PrebuiltBugle \
-       GoogleDialer \
        phh-overrides
 
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
