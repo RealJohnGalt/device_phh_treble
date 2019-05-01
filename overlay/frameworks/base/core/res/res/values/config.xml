@@ -147,4 +147,13 @@
 	<dimen name="config_buttonCornerRadius">4.0dip</dimen>
 	<string name="config_ims_package">org.codeaurora.ims</string>
 	<bool name="config_dynamic_bind_ims">true</bool>
+
+	<string-array name="config_deviceKeyHandlerLibs" translatable="false">
+		<item>/system/priv-app/MotoActions/MotoActions.apk</item>
+	</string-array>
+	<!-- Names of the key handler classes -->
+	<string-array name="config_deviceKeyHandlerClasses" translatable="false">
+		<item>com.moto.actions.KeyHandler</item>
+	</string-array>
+
 </resources>
