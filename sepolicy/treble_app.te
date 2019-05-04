@@ -2,4 +2,11 @@ allow system_app hal_wifi_hostapd_hwservice:hwservice_manager { add find };
 allow system_app hidl_base_hwservice:hwservice_manager { add };
 allow system_app wifi_data_file:dir create_dir_perms;
 allow system_app wifi_data_file:file create_file_perms;
-
+allow system_app sysfs_homebutton:file { getattr open write };
+allow system_app sysfs_homebutton:dir search;
+allow system_server sysfs_homebutton:file rw_file_perms;
+allow system_server sysfs_homebutton:dir r_dir_perms;
+allow system_server init:unix_stream_socket { read };
+type sysfs_homebutton, fs_type, sysfs_type, mlstrustedobject;
+hal_client_domain(system_app, hal_lineage_touch)
+hal_client_domain(system_server, hal_lineage_touch)
