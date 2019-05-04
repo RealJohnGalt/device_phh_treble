@@ -27,8 +27,7 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     telephony-ext \
     MotoActions \
-    Stk \
-    vendor.lineage.touch@1.0-service.ali
+    Stk
 
 PRODUCT_BOOT_JARS += \
     telephony-ext

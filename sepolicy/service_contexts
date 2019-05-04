@@ -1,6 +1,2 @@
 qti.ims.ext                                          u:object_r:radio_service:s0
 extphone                                             u:object_r:radio_service:s0
-vendor.lineage.touch::IGloveMode                     u:object_r:hal_lineage_touch_hwservice:s0
-vendor.lineage.touch::IKeyDisabler                   u:object_r:hal_lineage_touch_hwservice:s0
-vendor.lineage.touch::IStylusMode                    u:object_r:hal_lineage_touch_hwservice:s0
-vendor.lineage.touch::ITouchscreenGesture            u:object_r:hal_lineage_touch_hwservice:s0

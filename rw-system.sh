@@ -333,22 +333,5 @@ if getprop ro.vendor.build.fingerprint | grep -qE '^xiaomi/daisy/daisy_sprout:8.
     setprop setprop audio.camerasound.force true
     # Fix camera on DND, ugly workaround but meh
 fi
-#FPC Home Perms
-chown system system /sys/homebutton/enable
-chown system system /sys/homebutton/enable_off
-chown system system /sys/homebutton/haptic
-chown system system /sys/homebutton/haptic_off
-chown system system /sys/homebutton/proximity_check_off
-chown system system /sys/homebutton/key
-
-chown system system /sys/homebutton/key_hold
-chown system system /sys/homebutton/key_dbltap
-chown system system /sys/homebutton/key_left
-chown system system /sys/homebutton/key_right
-chown system system /sys/homebutton/key_screenoff
-chown system system /sys/homebutton/key_screenoff_hold
-chown system system /sys/homebutton/key_screenoff_dbltap
-chown system system /sys/homebutton/key_screenoff_left
-chown system system /sys/homebutton/key_screenoff_right
 
 mount -o bind /mnt/phh/empty_dir /vendor/etc/audio || true
