@@ -27,7 +27,8 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     telephony-ext \
     MotoActions \
-    Stk
+    Stk \
+    android.hardware.light@2.0-service.ali
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
